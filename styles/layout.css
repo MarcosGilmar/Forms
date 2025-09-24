@@ -1,0 +1,26 @@
+#app {
+    display: grid;
+    grid-template-columns: 51.25% 48.75%; /* De acordo com Figma */
+    
+    height: 100vh;
+    overflow: hidden /* no-scroll*/
+}
+
+main {
+    overflow: auto;
+    padding: 4rem;
+
+    & .main-container {  /* CSS nesting */
+        max-width: 33rem; 
+        margin-left: auto;
+    }
+}
+
+aside {
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+
+    & .aside-container {
+        max-width: 31rem;
+    }
+}
